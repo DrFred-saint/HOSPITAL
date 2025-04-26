@@ -5,12 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fred and Sanctus Hospitals Limited - Home</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styling for the spinner */
+        .loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #007BFF; /* Blue color */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Hiding the loader once page is fully loaded */
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
-<div class="loader" id="loader">
-    <h2>Loading...</h2>
-</div>
+<div class="loader" id="loader"></div>
 
 <header>
     <h1>Fred and Sanctus Hospitals Limited</h1>
