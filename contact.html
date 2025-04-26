@@ -3,51 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Fred and Sanctus</title>
+    <title>Fred and Sanctus Hospitals Limited - Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="loader" id="loader">
-    <h2>Loading...</h2>
-</div>
-
-<header>
-    <h1>Contact Us</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<section>
-    <h2>Reach Out to Us</h2>
-    <section id="contact">
-    <h2>Contact</h2>
-    <p>Phone: 08080518043</p>
-    <p>For inquiries, please <a href="mailto:sanctussonde@gmail.com">Email Us</a></p>
-    </section>
-
-    <h3>Send Us a Message</h3>
-    <form>
-        <input type="text" placeholder="Your Name" required style="width:100%;padding:10px;margin-bottom:10px;">
-        <input type="email" placeholder="Your Email" required style="width:100%;padding:10px;margin-bottom:10px;">
-        <textarea placeholder="Your Message" required style="width:100%;padding:10px;height:100px;"></textarea>
-        <button type="submit" style="padding:10px 20px;margin-top:10px;background:#007BFF;color:white;border:none;">Send</button>
-    </form>
-</section>
-
-<footer>
-    <p>Motto: <strong>NELLIS SECUNDUS</strong> | &copy; 2025 Fred and Sanctus Hospitals Limited</p>
-</footer>
-
-<script>
-window.addEventListener("load", function(){
-    document.getElementById("loader").classList.add("hidden");
-});
-</script>
-
+    <header>
+        <h1>Fred and Sanctus Hospitals Limited</h1>
+        <p><em>Motto: NELLIS SECUNDUS</em></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <p>For inquiries or appointments, feel free to reach out to us:</p>
+        <ul>
+            <li>Email: <a href="mailto:sanctussonde@gmail.com">sanctussonde@gmail.com</a></li>
+            <li>Phone: +234-808-051-8043</li>
+            <li>Address:  Rivers State University</li>
+        </ul>
+        <h3>Send us a message:</h3>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Fred and Sanctus Hospitals Limited. All rights reserved.</p>
+    </footer>
 </body>
 </html>
