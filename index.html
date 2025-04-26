@@ -9,12 +9,11 @@
 <body>
 
 <div class="loader" id="loader">
-    <div class="spinner"></div>
     <h2>Loading...</h2>
 </div>
 
-<header id="header">
-    <h1 id="headerTitle">Fred and Sanctus Hospitals Limited</h1>
+<header>
+    <h1>Fred and Sanctus Hospitals Limited</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -23,9 +22,9 @@
     </nav>
 </header>
 
-<section id="mainSection">
+<section>
     <h2>Welcome to Fred and Sanctus Hospitals Limited</h2>
-    <p>Founded by two dedicated medical students, Fred and Sanctus Hospitals Limited represents the future of compassionate, cutting-edge healthcare. We aim to deliver exceptional patient care while nurturing future leaders of the healthcare sector.</p>
+    <p>Founded by two dedicated medical students, Fred and Sanctus Hospitals Limited represents the future of compassionate, cutting-edge healthcare. Committed to excellence and innovation, we aim to deliver exceptional patient care while nurturing future leaders of the healthcare sector.</p>
 </section>
 
 <footer>
@@ -35,13 +34,6 @@
 <script>
 window.addEventListener("load", function(){
     document.getElementById("loader").classList.add("hidden");
-
-    // Dynamically change the header based on the page title
-    if (document.title.includes("Services")) {
-        document.getElementById("headerTitle").innerText = "Our Services";
-    } else if (document.title.includes("Contact")) {
-        document.getElementById("headerTitle").innerText = "Contact Us";
-    }
 });
 </script>
 
