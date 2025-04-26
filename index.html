@@ -5,60 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fred and Sanctus Hospitals Limited - Home</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Styling for the spinner */
-        .loader {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border: 16px solid #f3f3f3;
-            border-top: 16px solid #007BFF; /* Blue color */
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            animation: spin 2s linear infinite;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Hiding the loader once page is fully loaded */
-        .hidden {
-            display: none;
-        }
-    </style>
 </head>
 <body>
-
-<div class="loader" id="loader"></div>
-
-<header>
-    <h1>Fred and Sanctus Hospitals Limited</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<section>
-    <h2>Welcome to Fred and Sanctus Hospitals Limited</h2>
-    <p>Founded by two dedicated medical students, Fred and Sanctus Hospitals Limited represents the future of compassionate, cutting-edge healthcare. Committed to excellence and innovation, we aim to deliver exceptional patient care while nurturing future leaders of the healthcare sector.</p>
-</section>
-
-<footer>
-    <p>Motto: <strong>NELLIS SECUNDUS</strong> | &copy; 2025 Fred and Sanctus Hospitals Limited</p>
-</footer>
-
-<script>
-window.addEventListener("load", function(){
-    document.getElementById("loader").classList.add("hidden");
-});
-</script>
-
+    <header>
+        <h1>Fred and Sanctus Hospitals Limited</h1>
+        <p><em>Motto: NELLIS SECUNDUS</em></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to Fred and Sanctus Hospitals Limited</h2>
+            <p>We are two dedicated medical students committed to providing top-notch healthcare. Our motto <strong>&ldquo;NELLIS SECUNDUS&rdquo;</strong> guides our vision of excellence.</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </section>
+        <section class="features">
+            <h3>Our Services</h3>
+            <p>We offer a wide range of medical services to keep you and your family healthy:</p>
+            <ul>
+                <li>General Medicine</li>
+                <li>Pediatrics</li>
+                <li>Radiology</li>
+                <li>Laboratory Services</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Fred and Sanctus Hospitals Limited. All rights reserved.</p>
+    </footer>
 </body>
 </html>
