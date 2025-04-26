@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fred and Sanctus Hospitals Limited - About</title>
+    <title>About Us - Fred and Sanctus Hospitals Limited</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Fred and Sanctus Hospitals Limited</h1>
-        <p><em>Motto: NELLIS SECUNDUS</em></p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>About Us</h2>
-        <p>Fred and Sanctus Hospitals Limited is a venture started by two passionate medical students. We believe in delivering compassionate care backed by the latest medical knowledge. Our motto "<strong>NELLIS SECUNDUS</strong>" reflects our commitment to innovation and excellence.</p>
-        <p>Though we are still medical students, our dedication to healthcare drives us to make a difference. We aim to combine empathy and science to provide the best medical services for our community.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Fred and Sanctus Hospitals Limited. All rights reserved.</p>
-    </footer>
+
+<div class="loader" id="loader">
+    <h2>Loading...</h2>
+</div>
+
+<header>
+    <h1>About Us</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Our Story</h2>
+    <p>Fred and Sanctus Hospitals Limited was founded by two dedicated medical students with the goal of revolutionizing healthcare through compassion, innovation, and education. Our vision is to create a healthcare institution where both patients and medical professionals thrive.</p>
+</section>
+
+<footer>
+    <p>Motto: <strong>NELLIS SECUNDUS</strong> | &copy; 2025 Fred and Sanctus Hospitals Limited</p>
+</footer>
+
+<script>
+window.addEventListener("load", function(){
+    document.getElementById("loader").classList.add("hidden");
+});
+</script>
+
 </body>
 </html>
